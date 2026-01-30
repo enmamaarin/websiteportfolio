@@ -113,7 +113,7 @@ export default function PortfolioHome() {
                 { label: "Home", href: "#home" },
                 { label: "About", href: "#about" },
                 { label: "Skills", href: "#skills" },
-                { label: "Certifications", href: "/certificates", external: true },
+                { label: "Certifications", href: "#certifications"},
                 { label: "Projects", href: "#projects" },
                 { label: "Contact", href: "#contact" },
               ].map((item) => (
@@ -145,7 +145,7 @@ export default function PortfolioHome() {
               { label: "Home", href: "#home" },
               { label: "About", href: "#about" },
               { label: "Skills", href: "#skills" },
-              { label: "Certifications", href: "/certificates", external: true },
+              { label: "Certifications", href: "#certifications"},
               { label: "Projects", href: "#projects" },
               { label: "Contact", href: "#contact" },
             ].map((item) =>
@@ -365,52 +365,59 @@ export default function PortfolioHome() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="min-h-screen flex flex-col justify-center border-t border-white/10 py-20 md:py-28">
-          <div className="max-w-2xl mx-auto px-6 text-center">
-            <motion.h2
-              className="font-display text-3xl md:text-4xl font-bold text-white"
-              {...fadeUp}
-            >
-              Get in Touch
-            </motion.h2>
-            <motion.p
-              className="mt-4 text-neutral-400 text-lg md:text-xl"
-              {...fadeUp}
-            >
-              Have a project in mind or want to say hi? I’d love to hear from you.
-            </motion.p>
-            <motion.div
-              className="mt-10 flex flex-wrap justify-center gap-4"
-              {...fadeUp}
-            >
-              <Button
-                asChild
-                size="lg"
-                className="rounded-full bg-white text-black hover:bg-white/90"
-              >
-                <a href="mailto:hello@example.com">
-                  <Mail className="mr-2 size-4" />
-                  Say hello
-                </a>
-              </Button>
-              <div className="flex gap-4">
-                <a
-                  href="#"
-                  aria-label="GitHub"
-                  className="p-3 rounded-full border border-white/20 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/30 transition-colors"
-                >
-                  <Github className="size-5" />
-                </a>
-                <a
-                  href="#"
-                  aria-label="LinkedIn"
-                  className="p-3 rounded-full border border-white/20 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/30 transition-colors"
-                >
-                  <Linkedin className="size-5" />
-                </a>
-              </div>
-            </motion.div>
-          </div>
+<section id="contact" className="min-h-screen flex flex-col justify-center border-t border-white/10 py-20 md:py-28">
+  <div className="max-w-2xl mx-auto px-6 text-center">
+    <motion.h2
+      className="font-display text-3xl md:text-4xl font-bold text-white"
+      {...fadeUp}
+    >
+      Get in Touch
+    </motion.h2>
+    <motion.p
+      className="mt-4 text-neutral-400 text-lg md:text-xl"
+      {...fadeUp}
+    >
+      Have a project in mind or want to say hi? I’d love to hear from you.
+    </motion.p>
+
+    <motion.div
+      className="mt-10 flex flex-wrap justify-center gap-4"
+      {...fadeUp}
+    >
+      <Button
+        asChild
+        size="lg"
+        className="rounded-full bg-white text-black hover:bg-white/90"
+      >
+        <a href="mailto:hello@example.com">
+          <Mail className="mr-2 size-4" />
+          Say hello
+        </a>
+      </Button>
+
+      <div className="flex gap-4">
+        <a
+          href="https://github.com/enmamaarin"          // ← Replace with your actual GitHub URL
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          className="p-3 rounded-full border border-white/20 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/30 transition-colors"
+        >
+          <Github className="size-5" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/lenard-peregil-aa31933a5/"      // ← Replace with your actual LinkedIn URL
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="p-3 rounded-full border border-white/20 text-white/80 hover:text-white hover:bg-white/10 hover:border-white/30 transition-colors"
+        >
+          <Linkedin className="size-5" />
+              </a>
+            </div>
+        </motion.div>
+            </div>
         </section>
 
         <footer className="py-6 border-t border-white/10 text-center">

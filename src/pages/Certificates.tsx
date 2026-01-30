@@ -36,7 +36,7 @@ export default function Certificates() {
   return (
     <>
       <LiquidEther
-        colors={["#ffffffff", "#777777ff", "#aaaaaaff"]}
+        colors={["#B100FF", "#6A00FF", "#B100FF"]}
         mouseForce={20}
         cursorSize={100}
         isViscous
