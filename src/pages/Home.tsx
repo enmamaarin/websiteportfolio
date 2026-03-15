@@ -57,7 +57,7 @@ export default function PortfolioHome() {
       title: "Auspicia",
       description: "Consultation and Management System for Auspicia, a company that provides consultation services.",
       tags: ["Radix UI", "TypeScript", "API", "shadcn/ui"],
-      href: "#",
+      href: "https://auspicia-gamma.vercel.app/",
       live: true,
     },
   ];
