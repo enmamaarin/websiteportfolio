@@ -60,6 +60,13 @@ export default function PortfolioHome() {
       href: "https://auspicia-gamma.vercel.app/",
       live: true,
     },
+    {
+      title: "Manila Explorer",
+      description: "A travel website that provides information about tourist spots in Manila, Philippines.",
+      tags: ["React 18", "React-Leaflet","TypeScript", "Custom CSS"],
+      href: "https://manila-explorer.vercel.app/",
+      live: true,
+    },
   ];
 
   return (
